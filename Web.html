@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Web.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Game</title>
+</head>
+<body>
+    <header>
+        <!-- Home banner -->
+        <a href="#" class="logo">Honkai Starrail</a>
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Event">Event</a></li>
+            <li><a href="#Characters">Characters</a></li>
+            <li><a href="#worlds">worlds</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchbox">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="Search Games">
+            </div>
+        </div>
+        <div class="togleMenu" onclick="togleMenu();"></div>
+    </header>
+   
+    <div class="banner parallax" id="home">
+        <div class="bg">
+            <div class="content">
+                <h2>If One Dreams<br>
+                At Midnight</h2>
+                <p>New Event in Honkai Starrail</p>
+                <a href="https://hsr.hoyoverse.com/th-th/" target="_blank" class="btn">Join now</a>
+            </div>
+            <img src="Honkai 2.png">
+        </div>
+    </div>
+        
+    <!--About-->
+    <div class="about" id="Event">
+        <div class="contentBx">
+            <h2>Festival Invite</h2>
+            <p>"Festival Invitation" Returning Web Event Is Online. Participate to get up to 540 Stellar Jades!
+                Send an invite to your friends from the Planet of Festivities! Participate in this magnificent festival 
+                and chase your dreams in Penacony's amusement park! Get up to 540 Stellar Jades!
+            </p>
+            <a href="https://hsr.hoyoverse.com/en-us/news">Read more</a>
+        </div>
+        <img src="Honkai 3.png">
+    </div>
+
+    <div class="about" id="Event">
+        <div class="contentBx">
+            <h2>EP: The Flapper Sinthome (Part 1) | Honkai: Star Rail</h2>
+            <p>One's desires must be satisfied through denial, and love means giving something you don't have to someone that doesn't want it.</p>
+            <a href="https://hsr.hoyoverse.com/en-us/news">Read more</a>
+        </div>
+        <img src="Honkai 17.jpg">
+    </div>
+
+    <div class="about" id="Event">
+        <div class="contentBx">
+            <h2>Honkai: Star Rail Clockie Cartoon Series: "Welcome to Dreamville!"</h2>
+            <p>The brave and clever Clockie has embarked on an adventure!
+
+                Tick-tock! The dastardly Boss Stone is up to no good.
+                
+                Tick-tock! He's always trying to endanger Clockie!
+                
+                But don't worry,
+                
+                Clockie's got the smarts, and Clockie's got the courage!
+                
+                Together with his dependable friends,
+                
+                they'll protect this land of dreams and send the bad guys packing!
+            </p>
+            <a href="https://hsr.hoyoverse.com/en-us/news">Read more</a>
+        </div>
+        <img src="Honkai 18.jpg">
+    </div>
+
+<!--Characters-->
+    <div class="Characters" id="Characters">
+        <h2>Popular Characters</h2>
+        <ul>
+            <li class="list active" data-filter="all">ALL</li>
+            <li class="list" data-filter="DM">DAMAGE</li>
+            <li class="list" data-filter="DOT">DOT</li>
+            <li class="list" data-filter="SP">SUPPORT</li>
+            <li class="list" data-filter="HR">HEALER</li>
+        </ul>
+        <div class="cardBx">
+            <div class="card" data-item="DM">
+                <img src="Honkai 4.png">
+                <div class="content">
+                    <h4>Dan Heng</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>5 Star<br><span>Imaginary</span></p>
+                        <a href="https://www.codashop.com/th-th/honkai-star-rail" target="_blank">Summon now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="DM">
+                <img src="Honkai 7.jpg">
+                <div class="content">
+                    <h4>Jing liu</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>5 Star<br><span>Ice</span></p>
+                        <a href="https://www.codashop.com/th-th/honkai-star-rail" target="_blank">Summon now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="DM">
+                <img src="Honkai 8.jpg">
+                <div class="content">
+                    <h4>Seele</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>5 Star<br><span>Quantum</span></p>
+                        <a href="https://www.codashop.com/th-th/honkai-star-rail" target="_blank">Summon now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="DOT">
+                <img src="Honkai 5.png">
+                <div class="content">
+                    <h4>Black Swan</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>5 Star<br><span>Wind</span></p>
+                        <a href="https://www.codashop.com/th-th/honkai-star-rail" target="_blank">Summon now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="DOT">
+                <img src="Honkai 9.jpg">
+                <div class="content">
+                    <h4>Kafka</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>5 Star<br><span>Electric</span></p>
+                        <a href="https://www.codashop.com/th-th/honkai-star-rail" target="_blank">Summon now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="DOT">
+                <img src="Honkai 10.jpg">
+                <div class="content">
+                    <h4>Sampo</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>4 Star<br><span>Wind</span></p>
+                        <a href="https://www.codashop.com/th-th/honkai-star-rail" target="_blank">Summon now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="SP">
+                <img src="Honkai 6.png">
+                <div class="content">
+                    <h4>Ruan mei</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>5 Star<br><span>Ice</span></p>
+                        <a href="https://www.codashop.com/th-th/honkai-star-rail" target="_blank">Summon now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="SP">
+                <img src="Honkai 11.jpg">
+                <div class="content">
+                    <h4>Bronya</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>5 Star<br><span>Wind</span></p>
+                        <a href="https://www.codashop.com/th-th/honkai-star-rail" target="_blank">Summon now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="SP">
+                <img src="Honkai 12.jpg">
+                <div class="content">
+                    <h4>Sparkle</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>5 Star<br><span>Quantum</span></p>
+                        <a href="https://www.codashop.com/th-th/honkai-star-rail" target="_blank">Summon now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="HR">
+                <img src="Honkai 14.jpg">
+                <div class="content">
+                    <h4>Luocha</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>5 Star<br><span>Imaginary</span></p>
+                        <a href="https://www.codashop.com/th-th/honkai-star-rail" target="_blank">Summon now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="HR">
+                <img src="Honkai 15.jpg">
+                <div class="content">
+                    <h4>Huohuo</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>5 Star<br><span>Wind</span></p>
+                        <a href="https://www.codashop.com/th-th/honkai-star-rail" target="_blank">Summon now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="HR">
+                <img src="Honkai 16.jpeg">
+                <div class="content">
+                    <h4>Bailu</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>5 Star<br><span>Electric</span></p>
+                        <a href="https://www.codashop.com/th-th/honkai-star-rail" target="_blank">Summon now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Worlds-->
+    <div class="worlds" id="worlds">
+        <h2>This update have are new worlds</h2>
+        <div class="boxBx">
+            <div class="box">
+                <img src="Honkai Herta Space Station.png">
+                <div class="content">
+                    <h4><span>1</span> Herta Space Station</h4>
+                    <p> Start World</p>
+                    <div class="btn">
+                        <a href="https://hsr.hoyoverse.com/en-us/world" target="_blank" class="view">view more</a>
+                        <a href="https://hsr.hoyoverse.com/en-us/home" target="_blank" class="join">Join Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Honkai Jarilo-VI.png">
+                <div class="content">
+                    <h4><span>2</span> Jarilo-VI</h4>
+                    <p> Have a Journey</p>
+                    <div class="btn">
+                        <a href="https://hsr.hoyoverse.com/en-us/world" target="_blank" class="view">view more</a>
+                        <a href="https://hsr.hoyoverse.com/en-us/home" target="_blank" class="join">Join Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Honkai The Xianzhou Luofu.png">
+                <div class="content">
+                    <h4><span>3</span> The Xianzhou Luofu</h4>
+                    <p> Has a Problem in Journey</p>
+                    <div class="btn">
+                        <a href="https://hsr.hoyoverse.com/en-us/world" target="_blank" class="view">view more</a>
+                        <a href="https://hsr.hoyoverse.com/en-us/home" target="_blank" class="join">Join Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Honkai Penacony.jpg">
+                <div class="content">
+                    <h4><span>4</span> Penacony</h4>
+                    <p> Party in your dream</p>
+                    <div class="btn">
+                        <a href="https://hsr.hoyoverse.com/en-us/world" target="_blank" class="view">view more</a>
+                        <a href="https://hsr.hoyoverse.com/en-us/home" target="_blank" class="join">Join Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Honkai Star Rail logo.jpg">
+                <div class="content">
+                    <h4><span>5</span> Future</h4>
+                    <p> In Comming...</p>
+                    <div class="btn">
+                        <a href="https://hsr.hoyoverse.com/en-us/world" target="_blank" class="view">view more</a>
+                        <a href="https://hsr.hoyoverse.com/en-us/home" target="_blank" class="join">Join Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="Honkai Star Rail logo.jpg">
+                <div class="content">
+                    <h4><span>6</span> Future</h4>
+                    <p> In Comming...</p>
+                    <div class="btn">
+                        <a href="https://hsr.hoyoverse.com/en-us/world" target="_blank" class="view">view more</a>
+                        <a href="https://hsr.hoyoverse.com/en-us/home" target="_blank" class="join">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact-->
+    <div class="contact" id="contact">
+        <img src="Anime.jpg">
+        <div class="form">
+            <h1>Contact Us</h1>
+            <div class="inputBx">
+                <p>Enter Name</p>
+                <input type="text" placeholder="FullName">
+            </div>
+            <div class="inputBx">
+                <p>Enter Email</p>
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBx">
+                <p>Message</p>
+                <textarea placeholder="Type here...."></textarea>
+            </div>
+            <div class="inputBx">
+                <input type="submit" name="submit">
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="info">
+            <a href="#" class="logo">Honkai Starrail</a>
+            <p><i class='bx bx-copyright'></i> All Right Reserverd Only me</p>
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100006372196209" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="https://www.instagram.com/i_am_totor/" target="_blank"><i class='bx bxl-instagram' ></i></a></li>
+                <li><a href="https://steamcommunity.com/profiles/76561199155346033/" target="_blank"><i class='bx bxl-steam'></i></a></li>
+                <li><a href="https://twitter.com/NekoChan_Rem" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="https://github.com/TotorNezuko" target="_blank"><i class='bx bxl-github'></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        /* sticky navbar */
+        window.addEventListener('scroll',function(){
+            var header =document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0)
+        });
+
+        /* Filterable Cards */
+
+        let list =document.querySelectorAll('.list');
+        let card =document.querySelectorAll('.card');
+
+        for(let i = 0; i<list.length; i++){
+            list[i].addEventListener('click',function(){
+                for(let j=0; j<list.length; j++){
+                    list[j].classList.remove('active');
+                }
+                this.classList.add('active');
+
+                let dataFilter = this.getAttribute('data-Filter');
+
+                for( let k=0; k<card.length; k++)
+                {
+                    card[k].classList.remove('active');
+                    card[k].classList.add('hide');
+
+                    if(card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all'){
+                        card[k].classList.remove('hide');
+                        card[k].classList.add('active');
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins' , sans-serif;
+}
+#home{
+    background-image: url('Honkai Background.png');
+}
+body{
+    background: rgb(174, 252, 255);
+}
+.parallax {
+	background-color: rgb(174, 252, 255);
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+/* Scroll Bar */
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 0);
+    border-radius: 6px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: paleturquoise;
+    transition: 0.5s;
+    z-index: 1000;
+}
+header.sticky{
+    background: palevioletred;
+    box-shadow: 0 5px 10px palevioletred;
+}
+header .logo{
+    position: relative;
+    color: rgb(92, 90, 90);
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin: 10px;
+}
+header ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+header ul li a:hover{
+    background: rgb(255, 0, 149);
+    color: #ffffff;
+    box-shadow: 0  0   10px rgb(255, 0, 149);
+} 
+header .action .searchbox{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+}
+header .action .searchbox input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: black;
+}
+
+
+/*Home banner*/
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding:  0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg .content{
+    width: 50%;
+    height: 100%;
+}
+.banner .bg .content h2{
+    font-size: 4em;
+    color: palevioletred;
+    letter-spacing: 1px;
+}
+.banner .bg .content p{
+    font-size: 1em;
+    color: plum;
+    letter-spacing: 1px;
+}
+.banner .bg .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid rgb(232, 0, 253);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #ff02dd;
+    letter-spacing: 1px;
+}
+.banner .bg .content a:hover{
+    background: wheat;
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px wheat;
+}
+.banner .bg img{
+    width: 500px;
+}
+
+/* Event */
+
+.about{
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    padding: 0px 100px;
+    display: flex;
+    gap: 42px;
+    align-items: center;
+}
+.about .contentBx {
+    flex: 1 1 auto;
+    margin: 20px;
+}
+.about .contentBx h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: #cd04ff;
+}
+.about .contentBx p{
+    max-width: 1000px;
+    text-align: justify;
+    color: #000000;
+}
+.about .contentBx a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid rgb(232, 0, 253);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #ff02dd;
+    letter-spacing: 1px;
+}
+.about .contentBx a:hover{
+    background: wheat;
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px wheat;
+}
+.about img{
+    width: 700px;
+}
+
+/* Characters */
+.Characters{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+.Characters h2{
+    color: green;
+    margin: 10px 0;
+}
+.Characters ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.Characters ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+.Characters ul li.active{
+    background: wheat;
+    color: black;
+    box-shadow: 0 0 10px black;
+}
+.Characters .cardBx{
+    width: 100%;
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Characters .cardBx .card{
+    width: 280px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: gray;
+    overflow: hidden;
+}
+.Characters .cardBx .card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.Characters .cardBx .card .content{
+    padding: 10px;
+}
+.Characters .cardBx .card .content h4{
+    color: #fff;
+    margin: 15px 0;
+}
+.Characters .cardBx .card .progress-line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: rgb(rgb(0, 104, 73));
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.Characters .cardBx .card .progress-line span{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: aqua;
+    box-shadow: 0 0 10px aqua;
+}
+.Characters .cardBx .card .info{
+    border-top: 2px solid wheat;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Characters .cardBx .card .info p{
+    font-size: 1em;
+    color: #fff;
+}
+.Characters .cardBx .card .info p span{
+    color: aqua;
+}
+.Characters .cardBx .card .info a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.Characters .cardBx .card .info a:hover{
+    background: aqua;
+    border: none;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px aqua;
+}
+.Characters .cardBx .card.hide{
+    display: none;
+}
+
+
+/* Worlds */
+.worlds{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.worlds .boxBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.worlds .boxBx .box{
+    width: 350px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: black;
+    overflow: hidden;
+}
+.worlds .boxBx .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.worlds .boxBx .box .content{
+    padding: 10px;
+}
+.worlds .boxBx .box .content h4{
+    color: brown;
+    margin: 15px;
+}
+.worlds .boxBx .box .content h4 span{
+    color: burlywood;
+}
+.worlds .boxBx .box .content p{
+    text-align: justify;
+    color: white;
+    margin-top: 10px;
+}
+.worlds .boxBx .box .content .btn{
+    display: flex;
+    justify-content: space-between;
+}
+.worlds .boxBx .box .content .view{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background: aqua;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #000000;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px aqua;
+}
+.worlds .boxBx .box .content .view:hover{
+    border: 1px solid aqua;
+    background: none;
+    color: #fff;
+    box-shadow: none;
+}
+.worlds .boxBx .box .content .join{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.worlds .boxBx .box .content .join:hover{
+    background: aqua;
+    border: none;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px aqua;
+}
+
+/* contact */
+.contact{
+    padding: 20px 100px;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact img{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.contact .form{
+    width: 50%;
+    margin: 30px;
+}
+.contact .form h1{
+    color: #000000;
+}
+.contact .form .inputBx{
+    margin: 10px 0;
+}
+.contact .form .inputBx p{
+    color: #000000;
+}
+.contact .form .inputBx input,
+.contact .form .inputBx textarea{
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    background: #0026ff;
+    min-height: 15px;
+    font-size: 1.1em;
+}
+input::placeholder,textarea::placeholder{
+    color: #b5e8ff;
+}
+.contact .form .inputBx textarea{
+    height: 150px;
+}
+.contact .form .inputBx input[type="submit"]{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    outline: none;
+    background: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 700;
+    width: 150px;
+    border-radius: 5px;
+    color: #000000;
+    letter-spacing: 1px;
+}
+.contact .form .inputBx input[type="submit"]:hover{
+    background-color: aqua;
+    border: none;
+    color: #ffffff;
+    box-shadow: 0 0 10px aqua;
+}
+
+/* footer */
+footer{
+    padding: 10px 100px;
+}
+footer .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .info .logo{
+    position: relative;
+    color: purple;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+footer .info p{
+    color: #000000;
+}
+footer .info ul{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .info ul li{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid aqua;
+}
+footer .info ul li:hover{
+    background: aqua;
+    border: none;
+    box-shadow: 0 0 10px aqua;
+}
+footer .info ul li a i{
+    font-size: 1.5em;
+    color: #fff;
+}
+footer .info ul li:hover a i{
+    color: #000000;
+}
